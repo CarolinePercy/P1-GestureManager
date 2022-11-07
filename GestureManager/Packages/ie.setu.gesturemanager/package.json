@@ -1,0 +1,7 @@
+{
+  "name": "ie.setu.gesturemanager",
+  "version": "0.1.0",
+  "displayName": "Gesture Manager",
+  "description": "Makes integration of mobile support simple.",
+  "unity": "2021.3"
+}

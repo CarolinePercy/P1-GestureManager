@@ -225,8 +225,8 @@
       },
       "url": "https://packages.unity.com"
     },
-    "setu.gesturemanager": {
-      "version": "file:setu.gesturemanager",
+    "ie.setu.gesturemanager": {
+      "version": "file:ie.setu.gesturemanager",
       "depth": 0,
       "source": "embedded",
       "dependencies": {}
