@@ -28,3 +28,5 @@ To add the tap feature to your project, add the "Gesture Manager" Script to an o
 
 ## Documentation
 Proposal Document: https://docs.google.com/document/d/1r4UqwNsivdAwfCZDePYY_yrZ9xs6sNwZ5OU8N1F3UIs/edit#
+Repo:
+Package:
