@@ -1,3 +1,16 @@
 {
-	"name": "ie.setu."
+    "name": "ie.setu.",
+    "rootNamespace": "",
+    "references": [
+        "GUID:e58d7a449516c804da41a107ce12d8ce"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }

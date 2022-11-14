@@ -11,15 +11,14 @@ public class SquareChanges : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void ChangeColour()
     {
         sprite.color = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
         //Debug.Log("Change Colour!");
+    }
+
+    public void moveSquare(Vector2 t_newPos, Vector2 t_oldPos)
+    {
+        transform.position = t_newPos;
     }
 }

@@ -1,6 +1,6 @@
 {
   "name": "ie.setu.gesturemanager",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "displayName": "Mobile Gesture Manager",
   "description": "Package that allows easy implementation of mobile touch support.",
   "unity": "2021.1",
