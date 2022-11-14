@@ -19,6 +19,6 @@ public class SquareChanges : MonoBehaviour
 
     public void moveSquare(Vector2 t_newPos, Vector2 t_oldPos)
     {
-        Debug.Log("Swipe!");
+        transform.position = t_newPos;
     }
 }
