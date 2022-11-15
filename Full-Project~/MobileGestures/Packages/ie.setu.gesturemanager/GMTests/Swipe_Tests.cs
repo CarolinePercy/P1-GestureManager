@@ -7,7 +7,7 @@ using UnityEngine.UIElements;
 
 public class Swipe_Tests
 {
-    private GameManager game;
+    private GMGameManager game;
 
     [SetUp]
     public void Setup()
@@ -15,7 +15,7 @@ public class Swipe_Tests
         GameObject gameGameObject =
           MonoBehaviour.Instantiate(
             Resources.Load<GameObject>("Prefabs/Main Camera"));
-        game = gameGameObject.GetComponent<GameManager>();
+        game = gameGameObject.GetComponent<GMGameManager>();
     }
 
     [TearDown]

@@ -1,11 +1,13 @@
 {
-    "name": "Tests",
+    "name": "ie.setu.Editor.Tests",
     "rootNamespace": "",
     "references": [
-        "UnityEngine.TestRunner",
-        "UnityEditor.TestRunner",
+        "ie.setu.Editor",
         "ie.setu."
     ],
+    "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 991
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Project
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 73
+  controlID: 601
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -68,8 +68,8 @@ MonoBehaviour:
     y: 0
     width: 632
     height: 941
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -94,8 +94,8 @@ MonoBehaviour:
     y: 0
     width: 366
     height: 585
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 109
+  controlID: 602
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 110
+  controlID: 603
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -269,8 +269,8 @@ MonoBehaviour:
     y: 0
     width: 922
     height: 585
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -306,7 +306,7 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 202
+    ID: 104
     splitterInitialOffset: 361
     currentActiveSplitter: -1
     realSizes:
@@ -338,7 +338,7 @@ MonoBehaviour:
       name: MobileGestures
       fullName: MobileGestures
       resultStatus: 1
-      duration: 0.4882562
+      duration: 0.5001454
       messages: 
       output: 
       stacktrace: 
@@ -349,12 +349,13 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    - id: 1010
-      uniqueId: '[Tests][C:/Users/liney/OneDrive/Desktop/Work/Real World Modelling/P1/P1-GestureManager/Full-Project~/MobileGestures/Library/ScriptAssemblies/Tests.dll][suite]'
-      name: Tests.dll
-      fullName: C:/Users/liney/OneDrive/Desktop/Work/Real World Modelling/P1/P1-GestureManager/Full-Project~/MobileGestures/Library/ScriptAssemblies/Tests.dll
+    - id: 1006
+      uniqueId: '[ie.setu.Editor.Tests][C:/Users/liney/OneDrive/Desktop/Work/Real
+        World Modelling/P1/P1-GestureManager/Full-Project~/MobileGestures/Library/ScriptAssemblies/ie.setu.Editor.Tests.dll][suite]'
+      name: ie.setu.Editor.Tests.dll
+      fullName: C:/Users/liney/OneDrive/Desktop/Work/Real World Modelling/P1/P1-GestureManager/Full-Project~/MobileGestures/Library/ScriptAssemblies/ie.setu.Editor.Tests.dll
       resultStatus: 1
-      duration: 0.1650224
+      duration: 0.1783466
       messages: 
       output: 
       stacktrace: 
@@ -363,14 +364,14 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1004
+      parentId: 1000
       parentUniqueId: '[MobileGestures][suite]'
-    - id: 1005
-      uniqueId: Tests.dll/[Tests][Swipe_Tests][suite]
+    - id: 1001
+      uniqueId: ie.setu.Editor.Tests.dll/[ie.setu.Editor.Tests][Swipe_Tests][suite]
       name: Swipe_Tests
       fullName: Swipe_Tests
       resultStatus: 1
-      duration: 0.1451509
+      duration: 0.168057
       messages: 
       output: 
       stacktrace: 
@@ -379,14 +380,15 @@ MonoBehaviour:
       description: 
       isSuite: 1
       categories: []
-      parentId: 1010
-      parentUniqueId: '[Tests][C:/Users/liney/OneDrive/Desktop/Work/Real World Modelling/P1/P1-GestureManager/Full-Project~/MobileGestures/Library/ScriptAssemblies/Tests.dll][suite]'
-    - id: 1009
-      uniqueId: Tests.dll/Swipe_Tests/[Tests][Swipe_Tests.SquareMoveTest]
+      parentId: 1006
+      parentUniqueId: '[ie.setu.Editor.Tests][C:/Users/liney/OneDrive/Desktop/Work/Real
+        World Modelling/P1/P1-GestureManager/Full-Project~/MobileGestures/Library/ScriptAssemblies/ie.setu.Editor.Tests.dll][suite]'
+    - id: 1005
+      uniqueId: ie.setu.Editor.Tests.dll/Swipe_Tests/[ie.setu.Editor.Tests][Swipe_Tests.SquareMoveTest]
       name: SquareMoveTest
       fullName: Swipe_Tests.SquareMoveTest
       resultStatus: 1
-      duration: 0.1274317
+      duration: 0.1261133
       messages: 
       output: 
       stacktrace: 
@@ -396,14 +398,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1005
-      parentUniqueId: Tests.dll/[Tests][Swipe_Tests][suite]
-    - id: 1006
-      uniqueId: Tests.dll/Swipe_Tests/[Tests][Swipe_Tests.Swipe_TestsSimplePasses]
+      parentId: 1001
+      parentUniqueId: ie.setu.Editor.Tests.dll/[ie.setu.Editor.Tests][Swipe_Tests][suite]
+    - id: 1002
+      uniqueId: ie.setu.Editor.Tests.dll/Swipe_Tests/[ie.setu.Editor.Tests][Swipe_Tests.Swipe_TestsSimplePasses]
       name: Swipe_TestsSimplePasses
       fullName: Swipe_Tests.Swipe_TestsSimplePasses
       resultStatus: 1
-      duration: 0.002079
+      duration: 0.0020779
       messages: 
       output: 
       stacktrace: 
@@ -413,14 +415,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1005
-      parentUniqueId: Tests.dll/[Tests][Swipe_Tests][suite]
-    - id: 1007
-      uniqueId: Tests.dll/Swipe_Tests/[Tests][Swipe_Tests.Swipe_TestsWithEnumeratorPasses]
+      parentId: 1001
+      parentUniqueId: ie.setu.Editor.Tests.dll/[ie.setu.Editor.Tests][Swipe_Tests][suite]
+    - id: 1003
+      uniqueId: ie.setu.Editor.Tests.dll/Swipe_Tests/[ie.setu.Editor.Tests][Swipe_Tests.Swipe_TestsWithEnumeratorPasses]
       name: Swipe_TestsWithEnumeratorPasses
       fullName: Swipe_Tests.Swipe_TestsWithEnumeratorPasses
       resultStatus: 1
-      duration: 0.0094579
+      duration: 0.0108967
       messages: 
       output: 
       stacktrace: 
@@ -430,14 +432,14 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1005
-      parentUniqueId: Tests.dll/[Tests][Swipe_Tests][suite]
-    - id: 1008
-      uniqueId: Tests.dll/Swipe_Tests/[Tests][Swipe_Tests.SwipeDetectionTest]
+      parentId: 1001
+      parentUniqueId: ie.setu.Editor.Tests.dll/[ie.setu.Editor.Tests][Swipe_Tests][suite]
+    - id: 1004
+      uniqueId: ie.setu.Editor.Tests.dll/Swipe_Tests/[ie.setu.Editor.Tests][Swipe_Tests.SwipeDetectionTest]
       name: SwipeDetectionTest
       fullName: Swipe_Tests.SwipeDetectionTest
       resultStatus: 1
-      duration: 0.0108178
+      duration: 0.0096448
       messages: 
       output: 
       stacktrace: 
@@ -447,9 +449,9 @@ MonoBehaviour:
       isSuite: 0
       categories:
       - Uncategorized
-      parentId: 1005
-      parentUniqueId: Tests.dll/[Tests][Swipe_Tests][suite]
-    m_ResultText: MobileGestures (0.488s)
+      parentId: 1001
+      parentUniqueId: ie.setu.Editor.Tests.dll/[ie.setu.Editor.Tests][Swipe_Tests][suite]
+    m_ResultText: MobileGestures (0.500s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
@@ -574,22 +576,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Resources
+    - Packages/ie.setu.gesturemanager/GMRuntime/GMScripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Resources
+  - Packages/ie.setu.gesturemanager/GMRuntime/GMScripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\liney\OneDrive\Desktop\Work\Real World Modelling\P1\P1-GestureManager\Full-Project~\MobileGestures
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 38600000
-    m_LastClickedID: 24632
-    m_ExpandedIDs: 000000003060000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 180}
+    m_SelectedIDs: 5c600000
+    m_LastClickedID: 24668
+    m_ExpandedIDs: 0000000006600000366000004e60000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -617,7 +619,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000030600000
+    m_ExpandedIDs: 0000000006600000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -745,9 +747,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: ccf3ffff
-      m_LastClickedID: -3124
-      m_ExpandedIDs: ccf3ffffdefaffff
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 12fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1018,9 +1020,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.53750753, y: -1.8587188, z: -0.024795398}
+    m_Target: {x: 0.7476823, y: 0.22201858, z: -0.03990728}
     speed: 2
-    m_Value: {x: 0.53750753, y: -1.8587188, z: -0.024795398}
+    m_Value: {x: 0.7476823, y: 0.22201858, z: -0.03990728}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1059,7 +1061,7 @@ MonoBehaviour:
       m_Fade:
         m_Target: 0
         speed: 2
-        m_Value: 1
+        m_Value: 0
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
       m_Size: {x: 1, y: 1}
@@ -1071,9 +1073,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 3.375266
+    m_Target: 5.689347
     speed: 2
-    m_Value: 3.375266
+    m_Value: 5.689347
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1159,7 +1161,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -1211,9 +1213,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 634.5
+    y: 664
     width: 1287
-    height: 364.5
+    height: 335
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
