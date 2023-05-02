@@ -2,12 +2,12 @@
     "name": "ie.setu.Editor.Tests",
     "rootNamespace": "",
     "references": [
-        "ie.setu.Editor",
-        "ie.setu."
+        "ie.setu.",
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner",
+        "Unity.InputSystem",
+        "Unity.InputSystem.TestFramework"
     ],
-    "optionalUnityReferences": [
-    "TestAssemblies"
-  ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
@@ -17,6 +17,7 @@
     ],
     "autoReferenced": false,
     "defineConstraints": [
+        "UNITY_INCLUDE_TESTS",
         "UNITY_INCLUDE_TESTS"
     ],
     "versionDefines": [],

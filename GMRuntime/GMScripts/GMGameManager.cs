@@ -6,6 +6,7 @@ public class GMGameManager : MonoBehaviour
 {
     [SerializeField]
     private GameObject squareModel;
+        
 
     public GameObject GetSquare()
     {

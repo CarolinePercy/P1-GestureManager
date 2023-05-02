@@ -2,7 +2,8 @@
     "name": "ie.setu.",
     "rootNamespace": "",
     "references": [
-        "GUID:e58d7a449516c804da41a107ce12d8ce"
+        "GUID:e58d7a449516c804da41a107ce12d8ce",
+        "GUID:75469ad4d38634e559750d17036d5f7c"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
