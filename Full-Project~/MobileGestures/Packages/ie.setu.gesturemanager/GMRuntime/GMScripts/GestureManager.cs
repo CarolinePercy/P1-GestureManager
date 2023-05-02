@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.Events;
@@ -49,7 +50,7 @@ public class GestureManager : MonoBehaviour
             playerIn = GetComponent<PlayerInput>();
         }
 
-        InputActionAsset actions = Resources.Load<InputActionAsset>("GestureManagerControls");
+        InputActionAsset actions = (InputActionAsset)AssetDatabase.LoadAssetAtPath("Packages/ie.setu.gesturemanager/GMRuntime/GestureManagerControls.inputactions", typeof(InputActionAsset));
 
         playerIn.actions = actions;
         playerIn.camera = Camera.main;
