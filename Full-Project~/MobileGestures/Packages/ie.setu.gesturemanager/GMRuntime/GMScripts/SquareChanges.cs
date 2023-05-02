@@ -17,7 +17,7 @@ public class SquareChanges : MonoBehaviour
         //Debug.Log("Change Colour!");
     }
 
-    public void moveSquare(Vector2 t_newPos, Vector2 t_oldPos)
+    public void moveSquare(Vector2 t_newPos)
     {
         transform.position = t_newPos;
     }

@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 601
+  controlID: 107
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -64,9 +64,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 1288
+    x: 1540
     y: 0
-    width: 632
+    width: 380
     height: 941
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
@@ -85,23 +85,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneHierarchyWindow
+  m_Name: TestRunnerWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 366
+    width: 723
     height: 585
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 15}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 15}
   - {fileID: 12}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -119,7 +119,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 585
-    width: 1288
+    width: 1540
     height: 356
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
@@ -219,12 +219,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1288
+    width: 1540
     height: 941
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 602
+  controlID: 108
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -244,12 +244,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1288
+    width: 1540
     height: 585
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 603
+  controlID: 109
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -265,12 +265,12 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 366
+    x: 723
     y: 0
-    width: 922
+    width: 817
     height: 585
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -299,14 +299,14 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 79
-    width: 365
+    width: 722
     height: 564
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_Spl:
-    ID: 104
+    ID: 8313
     splitterInitialOffset: 361
     currentActiveSplitter: -1
     realSizes:
@@ -337,9 +337,9 @@ MonoBehaviour:
       uniqueId: '[MobileGestures][suite]'
       name: MobileGestures
       fullName: MobileGestures
-      resultStatus: 1
-      duration: 0.5001454
-      messages: 
+      resultStatus: 2
+      duration: 0.4244902
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -349,14 +349,14 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    - id: 1006
+    - id: 1003
       uniqueId: '[ie.setu.Editor.Tests][C:/Users/liney/OneDrive/Desktop/Work/Real
         World Modelling/P1/P1-GestureManager/Full-Project~/MobileGestures/Library/ScriptAssemblies/ie.setu.Editor.Tests.dll][suite]'
       name: ie.setu.Editor.Tests.dll
       fullName: C:/Users/liney/OneDrive/Desktop/Work/Real World Modelling/P1/P1-GestureManager/Full-Project~/MobileGestures/Library/ScriptAssemblies/ie.setu.Editor.Tests.dll
-      resultStatus: 1
-      duration: 0.1783466
-      messages: 
+      resultStatus: 2
+      duration: 0.1422146
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -367,12 +367,85 @@ MonoBehaviour:
       parentId: 1000
       parentUniqueId: '[MobileGestures][suite]'
     - id: 1001
-      uniqueId: ie.setu.Editor.Tests.dll/[ie.setu.Editor.Tests][Swipe_Tests][suite]
-      name: Swipe_Tests
-      fullName: Swipe_Tests
-      resultStatus: 1
-      duration: 0.168057
-      messages: 
+      uniqueId: ie.setu.Editor.Tests.dll/[ie.setu.Editor.Tests][Tap_Test][suite]
+      name: Tap_Test
+      fullName: Tap_Test
+      resultStatus: 2
+      duration: 0.1332109
+      messages: One or more child tests had errors
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1003
+      parentUniqueId: '[ie.setu.Editor.Tests][C:/Users/liney/OneDrive/Desktop/Work/Real
+        World Modelling/P1/P1-GestureManager/Full-Project~/MobileGestures/Library/ScriptAssemblies/ie.setu.Editor.Tests.dll][suite]'
+    - id: 1002
+      uniqueId: ie.setu.Editor.Tests.dll/Tap_Test/[ie.setu.Editor.Tests][Tap_Test.TapDetectionTest]
+      name: TapDetectionTest
+      fullName: Tap_Test.TapDetectionTest
+      resultStatus: 2
+      duration: 0.1020045
+      messages: 'System.NotSupportedException : Specified method is not supported.'
+      output: 
+      stacktrace: "  at UnityEngine.InputSystem.Controls.TouchPressControl.WriteValueIntoState
+        (System.Single value, System.Void* statePtr) [0x00001] in C:\\Users\\liney\\OneDrive\\Desktop\\Work\\Real
+        World Modelling\\P1\\P1-GestureManager\\Full-Project~\\MobileGestures\\Library\\PackageCache\\com.unity.inputsystem@1.4.4\\InputSystem\\Controls\\TouchPressControl.cs:49
+        \r\n  at UnityEngine.InputSystem.InputControlExtensions.WriteValueIntoEvent[TValue]
+        (UnityEngine.InputSystem.InputControl`1[TValue] control, TValue value, UnityEngine.InputSystem.LowLevel.InputEventPtr
+        eventPtr) [0x00040] in C:\\Users\\liney\\OneDrive\\Desktop\\Work\\Real World
+        Modelling\\P1\\P1-GestureManager\\Full-Project~\\MobileGestures\\Library\\PackageCache\\com.unity.inputsystem@1.4.4\\InputSystem\\Controls\\InputControlExtensions.cs:418
+        \r\n  at UnityEngine.InputSystem.InputTestFixture.<Set>g__SetUpAndQueueEvent|28_0[TValue]
+        (UnityEngine.InputSystem.LowLevel.InputEventPtr eventPtr, UnityEngine.InputSystem.InputTestFixture+<>c__DisplayClass28_0`1[TValue]&
+        ) [0x0002e] in C:\\Users\\liney\\OneDrive\\Desktop\\Work\\Real World Modelling\\P1\\P1-GestureManager\\Full-Project~\\MobileGestures\\Library\\PackageCache\\com.unity.inputsystem@1.4.4\\Tests\\TestFixture\\InputTestFixture.cs:533
+        \r\n  at UnityEngine.InputSystem.InputTestFixture.Set[TValue] (UnityEngine.InputSystem.InputControl`1[TValue]
+        control, TValue state, System.Double time, System.Double timeOffset, System.Boolean
+        queueEventOnly) [0x000d3] in C:\\Users\\liney\\OneDrive\\Desktop\\Work\\Real
+        World Modelling\\P1\\P1-GestureManager\\Full-Project~\\MobileGestures\\Library\\PackageCache\\com.unity.inputsystem@1.4.4\\Tests\\TestFixture\\InputTestFixture.cs:554
+        \r\n  at UnityEngine.InputSystem.InputTestFixture.Press (UnityEngine.InputSystem.Controls.ButtonControl
+        button, System.Double time, System.Double timeOffset, System.Boolean queueEventOnly)
+        [0x00001] in C:\\Users\\liney\\OneDrive\\Desktop\\Work\\Real World Modelling\\P1\\P1-GestureManager\\Full-Project~\\MobileGestures\\Library\\PackageCache\\com.unity.inputsystem@1.4.4\\Tests\\TestFixture\\InputTestFixture.cs:437
+        \r\n  at Tap_Test.TapDetectionTest () [0x00008] in C:\\Users\\liney\\OneDrive\\Desktop\\Work\\Real
+        World Modelling\\P1\\P1-GestureManager\\Full-Project~\\MobileGestures\\Packages\\ie.setu.gesturemanager\\GMTests\\Tap_Test.cs:14
+        \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
+        at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
+        invokeAttr, System.Reflection.Binder binder, System.Object[] parameters,
+        System.Globalization.CultureInfo culture) [0x0006a] in <9aad1b3a47484d63ba2b3985692d80e9>:0 "
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: ie.setu.Editor.Tests.dll/[ie.setu.Editor.Tests][Tap_Test][suite]
+    - id: 1006
+      uniqueId: '[Unity.InputSystem.IntegrationTests][C:/Users/liney/OneDrive/Desktop/Work/Real
+        World Modelling/P1/P1-GestureManager/Full-Project~/MobileGestures/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll][suite]'
+      name: Unity.InputSystem.IntegrationTests.dll
+      fullName: C:/Users/liney/OneDrive/Desktop/Work/Real World Modelling/P1/P1-GestureManager/Full-Project~/MobileGestures/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll
+      resultStatus: 4
+      duration: 0.0346582
+      messages: One or more child tests were ignored
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1000
+      parentUniqueId: '[MobileGestures][suite]'
+    - id: 1001
+      uniqueId: Unity.InputSystem.IntegrationTests.dll/[Unity.InputSystem.IntegrationTests][IntegrationTests][suite]
+      name: IntegrationTests
+      fullName: IntegrationTests
+      resultStatus: 4
+      duration: 0.0305679
+      messages: One or more child tests were ignored
       output: 
       stacktrace: 
       notRunnable: 0
@@ -381,48 +454,14 @@ MonoBehaviour:
       isSuite: 1
       categories: []
       parentId: 1006
-      parentUniqueId: '[ie.setu.Editor.Tests][C:/Users/liney/OneDrive/Desktop/Work/Real
-        World Modelling/P1/P1-GestureManager/Full-Project~/MobileGestures/Library/ScriptAssemblies/ie.setu.Editor.Tests.dll][suite]'
-    - id: 1005
-      uniqueId: ie.setu.Editor.Tests.dll/Swipe_Tests/[ie.setu.Editor.Tests][Swipe_Tests.SquareMoveTest]
-      name: SquareMoveTest
-      fullName: Swipe_Tests.SquareMoveTest
-      resultStatus: 1
-      duration: 0.1261133
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: ie.setu.Editor.Tests.dll/[ie.setu.Editor.Tests][Swipe_Tests][suite]
-    - id: 1002
-      uniqueId: ie.setu.Editor.Tests.dll/Swipe_Tests/[ie.setu.Editor.Tests][Swipe_Tests.Swipe_TestsSimplePasses]
-      name: Swipe_TestsSimplePasses
-      fullName: Swipe_Tests.Swipe_TestsSimplePasses
-      resultStatus: 1
-      duration: 0.0020779
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-      categories:
-      - Uncategorized
-      parentId: 1001
-      parentUniqueId: ie.setu.Editor.Tests.dll/[ie.setu.Editor.Tests][Swipe_Tests][suite]
+      parentUniqueId: '[Unity.InputSystem.IntegrationTests][C:/Users/liney/OneDrive/Desktop/Work/Real
+        World Modelling/P1/P1-GestureManager/Full-Project~/MobileGestures/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll][suite]'
     - id: 1003
-      uniqueId: ie.setu.Editor.Tests.dll/Swipe_Tests/[ie.setu.Editor.Tests][Swipe_Tests.Swipe_TestsWithEnumeratorPasses]
-      name: Swipe_TestsWithEnumeratorPasses
-      fullName: Swipe_Tests.Swipe_TestsWithEnumeratorPasses
+      uniqueId: Unity.InputSystem.IntegrationTests.dll/IntegrationTests/[Unity.InputSystem.IntegrationTests][IntegrationTests.Integration_CanChangeInputBackendPlayerSettingInEditor]
+      name: Integration_CanChangeInputBackendPlayerSettingInEditor
+      fullName: IntegrationTests.Integration_CanChangeInputBackendPlayerSettingInEditor
       resultStatus: 1
-      duration: 0.0108967
+      duration: 0.0199748
       messages: 
       output: 
       stacktrace: 
@@ -431,15 +470,15 @@ MonoBehaviour:
       description: 
       isSuite: 0
       categories:
-      - Uncategorized
+      - Integration
       parentId: 1001
-      parentUniqueId: ie.setu.Editor.Tests.dll/[ie.setu.Editor.Tests][Swipe_Tests][suite]
-    - id: 1004
-      uniqueId: ie.setu.Editor.Tests.dll/Swipe_Tests/[ie.setu.Editor.Tests][Swipe_Tests.SwipeDetectionTest]
-      name: SwipeDetectionTest
-      fullName: Swipe_Tests.SwipeDetectionTest
+      parentUniqueId: Unity.InputSystem.IntegrationTests.dll/[Unity.InputSystem.IntegrationTests][IntegrationTests][suite]
+    - id: 1002
+      uniqueId: Unity.InputSystem.IntegrationTests.dll/IntegrationTests/[Unity.InputSystem.IntegrationTests][IntegrationTests.Integration_CanSendAndReceiveEvents]
+      name: Integration_CanSendAndReceiveEvents
+      fullName: IntegrationTests.Integration_CanSendAndReceiveEvents
       resultStatus: 1
-      duration: 0.0096448
+      duration: 0.0043222
       messages: 
       output: 
       stacktrace: 
@@ -448,16 +487,95 @@ MonoBehaviour:
       description: 
       isSuite: 0
       categories:
-      - Uncategorized
+      - Integration
       parentId: 1001
-      parentUniqueId: ie.setu.Editor.Tests.dll/[ie.setu.Editor.Tests][Swipe_Tests][suite]
-    m_ResultText: MobileGestures (0.500s)
-    m_ResultStacktrace: 
+      parentUniqueId: Unity.InputSystem.IntegrationTests.dll/[Unity.InputSystem.IntegrationTests][IntegrationTests][suite]
+    - id: 1020
+      uniqueId: Unity.InputSystem.IntegrationTests.dll/IntegrationTests/[Unity.InputSystem.IntegrationTests][IntegrationTests.WindowsInput_MouseMovements_AreDetected]
+      name: WindowsInput_MouseMovements_AreDetected
+      fullName: IntegrationTests.WindowsInput_MouseMovements_AreDetected
+      resultStatus: 0
+      duration: 0
+      messages: Unstable due to 1252825
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 1
+      description: 
+      isSuite: 0
+      categories:
+      - Integration
+      parentId: 1016
+      parentUniqueId: Unity.InputSystem.IntegrationTests.dll/[Unity.InputSystem.IntegrationTests][IntegrationTests][suite]
+    - id: 1019
+      uniqueId: Unity.InputSystem.IntegrationTests.dll/IntegrationTests/[Unity.InputSystem.IntegrationTests][IntegrationTests.WindowsInput_RemoteDesktopMouseMovements_AreDetected]
+      name: WindowsInput_RemoteDesktopMouseMovements_AreDetected
+      fullName: IntegrationTests.WindowsInput_RemoteDesktopMouseMovements_AreDetected
+      resultStatus: 0
+      duration: 0
+      messages: Unstable due to 1252825
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 1
+      description: 
+      isSuite: 0
+      categories:
+      - Integration
+      parentId: 1016
+      parentUniqueId: Unity.InputSystem.IntegrationTests.dll/[Unity.InputSystem.IntegrationTests][IntegrationTests][suite]
+    m_ResultText: "TapDetectionTest (0.102s)\n---\nSystem.NotSupportedException :
+      Specified method is not supported.\n---\nat UnityEngine.InputSystem.Controls.TouchPressControl.WriteValueIntoState
+      (System.Single value, System.Void* statePtr) [0x00001] in C:\\Users\\liney\\OneDrive\\Desktop\\Work\\Real
+      World Modelling\\P1\\P1-GestureManager\\Full-Project~\\MobileGestures\\Library\\PackageCache\\com.unity.inputsystem@1.4.4\\InputSystem\\Controls\\TouchPressControl.cs:49
+      \r\n  at UnityEngine.InputSystem.InputControlExtensions.WriteValueIntoEvent[TValue]
+      (UnityEngine.InputSystem.InputControl`1[TValue] control, TValue value, UnityEngine.InputSystem.LowLevel.InputEventPtr
+      eventPtr) [0x00040] in C:\\Users\\liney\\OneDrive\\Desktop\\Work\\Real World
+      Modelling\\P1\\P1-GestureManager\\Full-Project~\\MobileGestures\\Library\\PackageCache\\com.unity.inputsystem@1.4.4\\InputSystem\\Controls\\InputControlExtensions.cs:418
+      \r\n  at UnityEngine.InputSystem.InputTestFixture.<Set>g__SetUpAndQueueEvent|28_0[TValue]
+      (UnityEngine.InputSystem.LowLevel.InputEventPtr eventPtr, UnityEngine.InputSystem.InputTestFixture+<>c__DisplayClass28_0`1[TValue]&
+      ) [0x0002e] in C:\\Users\\liney\\OneDrive\\Desktop\\Work\\Real World Modelling\\P1\\P1-GestureManager\\Full-Project~\\MobileGestures\\Library\\PackageCache\\com.unity.inputsystem@1.4.4\\Tests\\TestFixture\\InputTestFixture.cs:533
+      \r\n  at UnityEngine.InputSystem.InputTestFixture.Set[TValue] (UnityEngine.InputSystem.InputControl`1[TValue]
+      control, TValue state, System.Double time, System.Double timeOffset, System.Boolean
+      queueEventOnly) [0x000d3] in C:\\Users\\liney\\OneDrive\\Desktop\\Work\\Real
+      World Modelling\\P1\\P1-GestureManager\\Full-Project~\\MobileGestures\\Library\\PackageCache\\com.unity.inputsystem@1.4.4\\Tests\\TestFixture\\InputTestFixture.cs:554
+      \r\n  at UnityEngine.InputSystem.InputTestFixture.Press (UnityEngine.InputSystem.Controls.ButtonControl
+      button, System.Double time, System.Double timeOffset, System.Boolean queueEventOnly)
+      [0x00001] in C:\\Users\\liney\\OneDrive\\Desktop\\Work\\Real World Modelling\\P1\\P1-GestureManager\\Full-Project~\\MobileGestures\\Library\\PackageCache\\com.unity.inputsystem@1.4.4\\Tests\\TestFixture\\InputTestFixture.cs:437
+      \r\n  at Tap_Test.TapDetectionTest () [0x00008] in C:\\Users\\liney\\OneDrive\\Desktop\\Work\\Real
+      World Modelling\\P1\\P1-GestureManager\\Full-Project~\\MobileGestures\\Packages\\ie.setu.gesturemanager\\GMTests\\Tap_Test.cs:14
+      \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
+      at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x0006a] in <9aad1b3a47484d63ba2b3985692d80e9>:0"
+    m_ResultStacktrace: "  at UnityEngine.InputSystem.Controls.TouchPressControl.WriteValueIntoState
+      (System.Single value, System.Void* statePtr) [0x00001] in C:\\Users\\liney\\OneDrive\\Desktop\\Work\\Real
+      World Modelling\\P1\\P1-GestureManager\\Full-Project~\\MobileGestures\\Library\\PackageCache\\com.unity.inputsystem@1.4.4\\InputSystem\\Controls\\TouchPressControl.cs:49
+      \r\n  at UnityEngine.InputSystem.InputControlExtensions.WriteValueIntoEvent[TValue]
+      (UnityEngine.InputSystem.InputControl`1[TValue] control, TValue value, UnityEngine.InputSystem.LowLevel.InputEventPtr
+      eventPtr) [0x00040] in C:\\Users\\liney\\OneDrive\\Desktop\\Work\\Real World
+      Modelling\\P1\\P1-GestureManager\\Full-Project~\\MobileGestures\\Library\\PackageCache\\com.unity.inputsystem@1.4.4\\InputSystem\\Controls\\InputControlExtensions.cs:418
+      \r\n  at UnityEngine.InputSystem.InputTestFixture.<Set>g__SetUpAndQueueEvent|28_0[TValue]
+      (UnityEngine.InputSystem.LowLevel.InputEventPtr eventPtr, UnityEngine.InputSystem.InputTestFixture+<>c__DisplayClass28_0`1[TValue]&
+      ) [0x0002e] in C:\\Users\\liney\\OneDrive\\Desktop\\Work\\Real World Modelling\\P1\\P1-GestureManager\\Full-Project~\\MobileGestures\\Library\\PackageCache\\com.unity.inputsystem@1.4.4\\Tests\\TestFixture\\InputTestFixture.cs:533
+      \r\n  at UnityEngine.InputSystem.InputTestFixture.Set[TValue] (UnityEngine.InputSystem.InputControl`1[TValue]
+      control, TValue state, System.Double time, System.Double timeOffset, System.Boolean
+      queueEventOnly) [0x000d3] in C:\\Users\\liney\\OneDrive\\Desktop\\Work\\Real
+      World Modelling\\P1\\P1-GestureManager\\Full-Project~\\MobileGestures\\Library\\PackageCache\\com.unity.inputsystem@1.4.4\\Tests\\TestFixture\\InputTestFixture.cs:554
+      \r\n  at UnityEngine.InputSystem.InputTestFixture.Press (UnityEngine.InputSystem.Controls.ButtonControl
+      button, System.Double time, System.Double timeOffset, System.Boolean queueEventOnly)
+      [0x00001] in C:\\Users\\liney\\OneDrive\\Desktop\\Work\\Real World Modelling\\P1\\P1-GestureManager\\Full-Project~\\MobileGestures\\Library\\PackageCache\\com.unity.inputsystem@1.4.4\\Tests\\TestFixture\\InputTestFixture.cs:437
+      \r\n  at Tap_Test.TapDetectionTest () [0x00008] in C:\\Users\\liney\\OneDrive\\Desktop\\Work\\Real
+      World Modelling\\P1\\P1-GestureManager\\Full-Project~\\MobileGestures\\Packages\\ie.setu.gesturemanager\\GMTests\\Tap_Test.cs:14
+      \r\n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)\r\n 
+      at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags
+      invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo
+      culture) [0x0006a] in <9aad1b3a47484d63ba2b3985692d80e9>:0 "
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 0ab2a84d
-      m_LastClickedID: 1302901258
-      m_ExpandedIDs: b37e5b803dcf98370ab2a84dffffff7f
+      m_SelectedIDs: 3020e9c5
+      m_LastClickedID: -974577616
+      m_ExpandedIDs: b37e5b805798349c75839aa0ed616a193dcf98370ab2a84d5151f870ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -482,6 +600,7 @@ MonoBehaviour:
       m_SearchString: 
       selectedCategoryMask: 0
       availableCategories:
+      - Integration
       - Uncategorized
     m_SelectedOption: 0
   m_EditModeTestListGUI:
@@ -557,7 +676,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 664
-    width: 1287
+    width: 1539
     height: 335
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -576,22 +695,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Packages/ie.setu.gesturemanager/GMRuntime/GMScripts
+    - Packages/ie.setu.gesturemanager/GMTests
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Packages/ie.setu.gesturemanager/GMRuntime/GMScripts
+  - Packages/ie.setu.gesturemanager/GMTests
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\liney\OneDrive\Desktop\Work\Real World Modelling\P1\P1-GestureManager\Full-Project~\MobileGestures
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 180}
-    m_SelectedIDs: 5c600000
-    m_LastClickedID: 24668
-    m_ExpandedIDs: 0000000006600000366000004e60000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 277}
+    m_SelectedIDs: 30630000
+    m_LastClickedID: 25392
+    m_ExpandedIDs: 00000000d862000010630000166300001c6300002c6300003a67000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -619,7 +738,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000006600000
+    m_ExpandedIDs: 00000000d8620000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -646,7 +765,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c62300009e600000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -695,9 +814,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1288
+    x: 1540
     y: 79
-    width: 631
+    width: 379
     height: 920
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -738,7 +857,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 79
-    width: 365
+    width: 436.5
     height: 564
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -749,7 +868,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 12fbffff
+      m_ExpandedIDs: 8893ffffd093ffff4295ffff1496ffff5c96ffffdc97ffff009affff489affffb89bfffffa9cffff429dffffb29effff08a0ffff50a0ffffaca1ffff4aa3ffff92a3ffff02a5ffff84acffff12b4ffff5ab4ffffc8b5ffff22beffff6abeffffd8bfffff20c0ffff68c0ffff0ec2ffff22fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -793,9 +912,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 366
+    x: 723
     y: 79
-    width: 920
+    width: 815
     height: 564
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -1020,9 +1139,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.7476823, y: 0.22201858, z: -0.03990728}
+    m_Target: {x: 0.32587817, y: 0.35993809, z: -0.01782384}
     speed: 2
-    m_Value: {x: 0.7476823, y: 0.22201858, z: -0.03990728}
+    m_Value: {x: 0.32587817, y: 0.35993809, z: -0.01782384}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1073,9 +1192,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 5.689347
+    m_Target: 4.297321
     speed: 2
-    m_Value: 5.689347
+    m_Value: 4.297321
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1120,9 +1239,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 366
+    x: 723
     y: 79
-    width: 920
+    width: 815
     height: 564
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -1170,23 +1289,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 920
+      width: 815
       height: 543
     m_Scale: {x: 0.50277776, y: 0.50277776}
-    m_Translation: {x: 460, y: 271.5}
+    m_Translation: {x: 407.5, y: 271.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -914.9172
+      x: -810.49725
       y: -540
-      width: 1829.8344
+      width: 1620.9945
       height: 1080
     m_MinimalGUI: 1
   m_defaultScale: 0.50277776
-  m_LastWindowPixelSize: {x: 1840, y: 1128}
+  m_LastWindowPixelSize: {x: 1630, y: 1128}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -1214,7 +1333,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 664
-    width: 1287
+    width: 1539
     height: 335
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
