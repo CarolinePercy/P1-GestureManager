@@ -7,8 +7,8 @@ using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using static UnityEngine.GraphicsBuffer;
 
-//[System.Serializable]
-//public class SwipeEvent : UnityEvent<Vector2, Vector2> { }
+[System.Serializable]
+public class SwipeEvent : UnityEvent<Vector2> { }
 
 [System.Serializable]
 public class TapEvent : UnityEvent<Vector2> { }
@@ -16,15 +16,23 @@ public class TapEvent : UnityEvent<Vector2> { }
 
 public class GestureManager : MonoBehaviour
 {
-    [Range(1, 10)]
-    public int swipeSensitivity = 1;
+
+    [Header("Settings")]
+    [Range(0.1f, 20.0f)]
+    [Tooltip("This controls how much the input must move before a 'Press' turns into a 'Swipe'.")]
+    public float swipeSensitivity = 6;
 
     [Range(0.0f, 3.0f)]
     [Tooltip("This controls how long before a 'Tap' turns into a 'Press'.")]
     public float maxTapDuration = 0.2f;
 
+    [Range(0.0f, 3.0f)]
+    //[Tooltip("This controls how long before a 'Tap' turns into a 'Press'.")]
+    public float HoldDuration = 0.4f;
+
+    [Header("Events")]
     public TapEvent Tap;
-    //public SwipeEvent Swipe;
+    public SwipeEvent Swipe;
 
     private Vector2 startScreenTouchPosition;
     private Vector2 currentScreenTouchPosition;
@@ -41,6 +49,17 @@ public class GestureManager : MonoBehaviour
         Tap.Invoke(currentScreenTouchPosition);
     }
 
+    private void OnSwipe(InputValue value)
+    {
+        Vector2 change = value.Get<Vector2>();
+
+        if (Mathf.Abs(change.x) > swipeSensitivity || Mathf.Abs(change.y) > swipeSensitivity)
+        {
+            Swipe.Invoke(change);
+        }
+
+    }
+
     void Reset()
     {
         AddPlayerInput();
@@ -50,7 +69,9 @@ public class GestureManager : MonoBehaviour
     {
         AddPlayerInput();
 
-        playerIn.actions.FindActionMap("GestureControls").FindAction("Tap").ApplyParameterOverride("duration", maxTapDuration);
+        InputActionMap gestures = playerIn.actions.FindActionMap("GestureControls");
+
+        gestures.FindAction("Tap").ApplyParameterOverride("duration", maxTapDuration);
     }
 
     private void AddPlayerInput()
