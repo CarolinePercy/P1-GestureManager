@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
-using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
@@ -98,9 +97,13 @@ public class GestureManager : MonoBehaviour
     {
         if (playerIn.actions == null)
         {
+#if UNITY_EDITOR
+
             InputActionAsset actions = (InputActionAsset)AssetDatabase.LoadAssetAtPath("Packages/ie.setu.gesturemanager/GMRuntime/GestureManagerControls.inputactions", typeof(InputActionAsset));
 
             playerIn.actions = actions;
+
+#endif
         }
     }
 }
