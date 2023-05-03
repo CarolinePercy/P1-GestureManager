@@ -19,12 +19,17 @@ public class GestureManager : MonoBehaviour
     [Range(1, 10)]
     public int swipeSensitivity = 1;
 
+    [Range(0.0f, 3.0f)]
+    [Tooltip("This controls how long before a 'Tap' turns into a 'Press'.")]
+    public float maxTapDuration = 0.2f;
+
     public TapEvent Tap;
     //public SwipeEvent Swipe;
 
     private Vector2 startScreenTouchPosition;
     private Vector2 currentScreenTouchPosition;
 
+    PlayerInput playerIn;
 
     private void OnMove(InputValue value)
     {
@@ -38,21 +43,43 @@ public class GestureManager : MonoBehaviour
 
     void Reset()
     {
-        PlayerInput playerIn;
+        AddPlayerInput();
+    }
 
-        if (GetComponent<PlayerInput>() == null)
+    private void OnValidate()
+    {
+        AddPlayerInput();
+
+        playerIn.actions.FindActionMap("GestureControls").FindAction("Tap").ApplyParameterOverride("duration", maxTapDuration);
+    }
+
+    private void AddPlayerInput()
+    {
+        if (playerIn == null)
         {
-           playerIn = gameObject.AddComponent<PlayerInput>();
+            if (GetComponent<PlayerInput>() == null)
+            {
+                playerIn = gameObject.AddComponent<PlayerInput>();
+                playerIn.camera = Camera.main;
+            }
+
+            else
+            {
+                playerIn = GetComponent<PlayerInput>();
+            }
         }
 
-        else
+
+        AddActions();
+    }
+
+    private void AddActions()
+    {
+        if (playerIn.actions == null)
         {
-            playerIn = GetComponent<PlayerInput>();
+            InputActionAsset actions = (InputActionAsset)AssetDatabase.LoadAssetAtPath("Packages/ie.setu.gesturemanager/GMRuntime/GestureManagerControls.inputactions", typeof(InputActionAsset));
+
+            playerIn.actions = actions;
         }
-
-        InputActionAsset actions = (InputActionAsset)AssetDatabase.LoadAssetAtPath("Packages/ie.setu.gesturemanager/GMRuntime/GestureManagerControls.inputactions", typeof(InputActionAsset));
-
-        playerIn.actions = actions;
-        playerIn.camera = Camera.main;
     }
 }
