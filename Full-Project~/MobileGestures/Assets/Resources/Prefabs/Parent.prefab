@@ -364,6 +364,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7923277755692702623, guid: 966fa2a9ec2638641be1ff8abfb1d6f7, type: 3}
+      propertyPath: swipeSensitivity
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7923277755692702623, guid: 966fa2a9ec2638641be1ff8abfb1d6f7, type: 3}
       propertyPath: Tap.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 44417901776562533}
