@@ -123,17 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &265723081 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 44417901776562533, guid: d6e6be70b0e9d07498fc3e773d8cc3f8, type: 3}
-  m_PrefabInstance: {fileID: 44417902899790343}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afa44303715f7e54db720421398b0ddf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &44417902899790343
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -141,10 +130,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 44417902654024916, guid: d6e6be70b0e9d07498fc3e773d8cc3f8, type: 3}
-      propertyPath: Swipe.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 265723081}
     - target: {fileID: 544312147965088389, guid: d6e6be70b0e9d07498fc3e773d8cc3f8, type: 3}
       propertyPath: m_Name
       value: Parent
