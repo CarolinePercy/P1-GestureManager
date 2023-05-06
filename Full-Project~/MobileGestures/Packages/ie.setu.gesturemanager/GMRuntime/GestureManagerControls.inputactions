@@ -40,6 +40,33 @@
                     "processors": "",
                     "interactions": "Hold(duration=0.2)",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Pinch",
+                    "type": "Value",
+                    "id": "2537b225-65b6-4ee3-89f2-8133b5b330ca",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "MoveTwo",
+                    "type": "Value",
+                    "id": "d335b7be-80d7-4b5c-9be8-5b7babf50843",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "PinchTouch",
+                    "type": "Button",
+                    "id": "7bed1597-427e-4401-abce-d8615d39aba8",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -79,7 +106,7 @@
                 {
                     "name": "",
                     "id": "b7b4b797-5246-486e-ac40-2173e679b74f",
-                    "path": "<Touchscreen>/position",
+                    "path": "<Touchscreen>/touch0/position",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -174,6 +201,72 @@
                     "action": "Press",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ee8fc6ef-12af-4d90-b23a-cc3dc08b572e",
+                    "path": "<Mouse>/scroll",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pinch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9ccccec4-ddb4-4073-a22d-5afeb9256f9f",
+                    "path": "<Touchscreen>/touch1/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveTwo",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Two Modifiers",
+                    "id": "b1a18647-2a79-4773-af18-3ae2082911d8",
+                    "path": "TwoModifiers",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PinchTouch",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "modifier1",
+                    "id": "1196f5cf-20a4-46c7-a7bd-11036bc779cb",
+                    "path": "<Touchscreen>/touch0/press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PinchTouch",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "modifier2",
+                    "id": "5bc07a84-b266-4235-b9f5-dc01f8c3449e",
+                    "path": "<Touchscreen>/touch1/press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PinchTouch",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "binding",
+                    "id": "7bd5ad27-7cec-4162-8e87-11f72b8562b7",
+                    "path": "<Touchscreen>/touch1/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PinchTouch",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 }
             ]
         }

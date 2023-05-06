@@ -15,6 +15,9 @@ public class TapEvent : UnityEvent<Vector2> { }
 [System.Serializable]
 public class PressEvent : UnityEvent<Vector2> { }
 
+[System.Serializable]
+public class PinchEvent : UnityEvent<float> { }
+
 
 public class GestureManager : MonoBehaviour
 {
@@ -40,9 +43,11 @@ public class GestureManager : MonoBehaviour
     public TapEvent Tap;
     public SwipeEvent Swipe;
     public PressEvent Press;
+    public PinchEvent Pinch;
 
     private Vector2 startScreenTouchPosition = new Vector2();
     private Vector2 currentScreenTouchPosition = new Vector2();
+    private Vector2 secondFingerPosition = new Vector2();   
 
     PlayerInput playerIn;
 
@@ -54,7 +59,12 @@ public class GestureManager : MonoBehaviour
 
     private void Update()
     {
-       
+        startScreenTouchPosition = currentScreenTouchPosition;
+    }
+
+    private void OnMoveTwo(InputValue value) 
+    {
+        secondFingerPosition = Camera.main.ScreenToWorldPoint(value.Get<Vector2>());
     }
 
     private void OnTap()
@@ -66,6 +76,7 @@ public class GestureManager : MonoBehaviour
     {
         Vector2 change = value.Get<Vector2>();
 
+        //print(value.Get<>);
         if (Mathf.Abs(change.x) > swipeSensitivity || Mathf.Abs(change.y) > swipeSensitivity)
         {
             Swipe.Invoke(change * swipeSpeed);
@@ -81,6 +92,20 @@ public class GestureManager : MonoBehaviour
         {
             Press.Invoke(currentScreenTouchPosition);
         }
+    }
+
+    private void OnPinch(InputValue value)
+    {
+        Pinch.Invoke(value.Get<Vector2>().y / 200.0f);
+    }
+
+    private void OnPinchTouch(InputValue value)
+    {
+        float beforeDiff = Vector2.SqrMagnitude(secondFingerPosition- startScreenTouchPosition);
+        Vector3 touch1change = Camera.main.ScreenToWorldPoint(value.Get<Vector2>());
+        float afterDiff = Vector2.SqrMagnitude( new Vector2(touch1change.x, touch1change.y) + secondFingerPosition - currentScreenTouchPosition);
+
+        Pinch.Invoke((beforeDiff - afterDiff) * 3);
     }
 
     void Reset()
