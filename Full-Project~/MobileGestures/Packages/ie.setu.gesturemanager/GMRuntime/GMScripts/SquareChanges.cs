@@ -5,6 +5,7 @@ using UnityEngine;
 public class SquareChanges : MonoBehaviour
 {
     private SpriteRenderer sprite;
+    bool big = false;
     
     void Awake()
     {
@@ -21,5 +22,23 @@ public class SquareChanges : MonoBehaviour
     {
         t_movement *= 0.05f;
         transform.position += new Vector3(t_movement.x, t_movement.y, 0);
+    }
+
+    public void changeSize(Vector2 t_pos)
+    {
+        Vector2 size = new Vector2();
+        big = !big;
+
+        if (big) 
+        {
+            size = transform.localScale * 2;
+        }
+
+        else
+        {
+            size = transform.localScale / 2;
+        }
+
+        transform.localScale = size;
     }
 }
